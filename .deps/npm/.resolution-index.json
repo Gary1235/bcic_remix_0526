@@ -14,5 +14,13 @@
         "file": "contracts/Lab2.sol"
       }
     }
+  },
+  "contracts/Lab3.sol": {
+    "__sources__": {
+      "contracts/Lab3.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\n\r\npragma solidity ^0.7.4;\r\n\r\ncontract Demo3 {\r\n    function arrayExplain1() public pure returns(uint256) {\r\n        uint len = 7;\r\n        uint256[] memory a = new uint256[](len);\r\n        return a.length;\r\n    }\r\n\r\n    function arrayExplain2() public pure returns(uint256) {\r\n        uint256[10] memory b;\r\n        return b.length;\r\n    }\r\n\r\n    function arrayExplain3(uint8 idx) public pure returns(uint256) {\r\n        uint len = 10;\r\n        uint256[] memory a = new uint256[](len);\r\n        a[0] = 2;\r\n        a[1] = 4;\r\n        a[2] = 6;\r\n        a[3] = 8;\r\n        a[4] = 10;\r\n        return a[idx];\r\n    }\r\n\r\n    function arrayExplain4(uint8 idx) public pure returns(uint256) {\r\n        uint256[10] memory b;\r\n        b[0] = 2;\r\n        b[1] = 4;\r\n        b[2] = 6;\r\n        b[3] = 8;\r\n        b[4] = 10;\r\n        return b[idx];\r\n    }\r\n}",
+        "file": "contracts/Lab3.sol"
+      }
+    }
   }
 }
