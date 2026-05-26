@@ -54,5 +54,13 @@
         "file": "contracts/Lab7.sol"
       }
     }
+  },
+  "contracts/Lab8.sol": {
+    "__sources__": {
+      "contracts/Lab8.sol": {
+        "content": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.7.4;\r\n\r\ncontract Demo8 {\r\n    address public owner;\r\n\r\n    constructor() {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    modifier onlyOwner() {\r\n        require(msg.sender == owner);\r\n        _;\r\n    }\r\n\r\n    modifier costs(uint256 price) {\r\n        if (msg.value >= price) {\r\n            _;\r\n        }\r\n    }\r\n}\r\n\r\ncontract Register is Demo8 {\r\n    mapping(address => bool) public registeredAddress;\r\n    uint256 public price;\r\n    constructor(uint256 initPrice) {\r\n        price = initPrice;\r\n    }\r\n\r\n    function register() public payable costs(price) {\r\n        registeredAddress[msg.sender] = true;\r\n    }\r\n\r\n    function changePrice(uint256 newPrice) public onlyOwner {\r\n        price = newPrice;\r\n    }\r\n}",
+        "file": "contracts/Lab8.sol"
+      }
+    }
   }
 }
