@@ -68,6 +68,97 @@
 				],
 				"stateMutability": "pure",
 				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "arrayExplain5",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "arrayExplain6",
+				"outputs": [
+					{
+						"internalType": "uint256[10]",
+						"name": "",
+						"type": "uint256[10]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "arrayExplain7",
+				"outputs": [
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "x",
+						"type": "uint256"
+					}
+				],
+				"name": "arrayExplain8",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "arrayExplain9",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "members",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "members2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -98,11 +189,11 @@
 	},
 	"sources": {
 		"contracts/Lab3.sol": {
-			"keccak256": "0x348e30772a22b2eac956a455f4a51f971db2afe4241472a12dca15960b04d517",
+			"keccak256": "0xcd41e3ad4c11c0c83e54dcdd02eb06e972525b2cb5fed1bd6fcc806f233491d0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1169d80fed49886a87b6d3d1f8f3499c89774b71881f35c2611fcd6fc51f13d7",
-				"dweb:/ipfs/QmR18RdbFUcsBd2TvsiqBzpA2ao3EDZkBKD7oZjvouuEA3"
+				"bzz-raw://ae2a5c537ecbbc39f1e3dd8e7aca18453cd6a611b8819ec9bb8fa910eeeb4f9c",
+				"dweb:/ipfs/QmfW95PD9VjtSq8vfAvvWmGP2PBSR16NbW619WgQETipa9"
 			]
 		}
 	},
